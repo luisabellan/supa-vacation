@@ -5,6 +5,7 @@ import toast from 'react-hot-toast';
 import classNames from 'classnames';
 import { ArrowUpIcon } from '@heroicons/react/outline';
 
+
 const ImageUpload = ({
   label = 'Image',
   initialImage = null,

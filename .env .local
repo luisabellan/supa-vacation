@@ -1,0 +1,2 @@
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_SECRET="UGwQemCI/xNEx1IlrGmebSfJlye59GyEOlFze1YpecM="
