@@ -34,8 +34,7 @@ export default NextAuth({
       GoogleProvider({
         clientId: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        // redirectUri: '{app_url}/api/auth/callback/google'
-        redirectUri: '/api/auth/callback/google',
+        redirectUri: 'https://supa-vacation-ten.vercel.app/api/auth/callback/google',
 
 
       }),

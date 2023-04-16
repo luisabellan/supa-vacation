@@ -6,6 +6,7 @@ import { toast } from 'react-hot-toast';
 import { Formik, Form } from 'formik';
 import Input from '@/components/Input';
 import ImageUpload from '@/components/ImageUpload';
+import axios from 'axios';
 
 const ListingSchema = Yup.object().shape({
   title: Yup.string().trim().required(),
@@ -38,6 +39,7 @@ const ListingForm = ({
       setImageUrl(data?.url);
       toast.success('Successfully uploaded', { id: toastId });
     } catch (e) {
+      console.log(e);
       toast.error('Unable to upload', { id: toastId });
       setImageUrl('');
     } finally {
