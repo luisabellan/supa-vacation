@@ -26,14 +26,12 @@ export default NextAuth({
           },
         },
         from: process.env.NEXT_PUBLIC_EMAIL_FROM,
-        
         maxAge: 10 * 60, // Magic links are valid for 10 min only
       }),
       GoogleProvider({
         clientId: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
         clientSecret: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET,
-        redirectUri: 'https://supa-vacation-ten.vercel.app/api/auth/callback/google',
-
+        // redirectUri: 'https://supa-vacation-ten.vercel.app/api/auth/callback/google',
 
       }),
     ],
